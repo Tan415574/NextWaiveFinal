@@ -7,7 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 :root{--ink:#fff;--bg:#0e0e0f;--surface:#1a191b;--surface-high:#201f21;--surface-highest:#262627;--surface-bright:#2c2c2d;--surface-low:#131314;--muted:#adaaab;--outline:#484849;--outline-dim:rgba(72,72,73,0.15);--primary:#cc97ff;--primary-dim:#9c48ea;--secondary:#9093ff;--tertiary:#ff95a0;--glow-p:rgba(168,85,247,0.4)}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;font-family:inherit}::selection{background:rgba(204,151,255,.3)}
 .side-nav-trigger{position:fixed;top:1.5rem;right:1.5rem;z-index:200;width:52px;height:52px;border-radius:12px;background:rgba(26,25,27,.6);backdrop-filter:blur(16px);border:1px solid var(--outline-dim);display:flex;align-items:center;justify-content:center;transition:all .3s;cursor:pointer}.side-nav-trigger:hover{background:var(--surface-highest);border-color:rgba(204,151,255,.2)}
@@ -35,8 +34,6 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
 
 .svc-block{max-width:1200px;margin:0 auto;padding:5rem 2rem}
 .svc-block+.svc-block{border-top:1px solid rgba(255,255,255,.03)}
-
-/* Feature service (text only, no image) */
 .svc-feature{max-width:800px}
 .svc-feature h2{font-size:2.2rem;font-weight:800;letter-spacing:-0.04em;margin-bottom:1rem}
 .svc-feature>p{color:var(--muted);line-height:1.7;margin-bottom:1.5rem;font-size:1rem}
@@ -45,16 +42,14 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
 .svc-feature-list li i{color:var(--primary);font-size:.7rem}
 .svc-feature .enquire{display:inline-block;font-size:.8rem;font-weight:700;color:var(--primary);transition:opacity .3s}.svc-feature .enquire:hover{opacity:.7}
 
-/* Bento pair */
 .svc-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-.svc-pair-card{background:var(--surface);border-radius:16px;padding:2.5rem;border:1px solid var(--outline-dim);transition:all .4s;position:relative;overflow:hidden}
+.svc-pair-card{background:var(--surface);border-radius:16px;padding:2.5rem;border:1px solid var(--outline-dim);transition:all .4s;overflow:hidden}
 .svc-pair-card:hover{background:var(--surface-high);transform:translateY(-4px)}
 .svc-pair-card .tag{display:inline-block;font-size:.55rem;font-weight:800;text-transform:uppercase;letter-spacing:.25em;padding:.35rem .8rem;border-radius:999px;margin-bottom:1.5rem}
 .svc-pair-card h3{font-size:1.8rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:.8rem}
 .svc-pair-card p{color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:1.5rem}
 .svc-pair-card .cta-link{font-size:.8rem;font-weight:700;color:var(--primary);transition:opacity .3s}.svc-pair-card .cta-link:hover{opacity:.7}
 
-/* Social + ecom block */
 .svc-split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
 .svc-split h2{font-size:2.2rem;font-weight:800;letter-spacing:-0.04em;margin-bottom:1rem}
 .svc-split>div>p{color:var(--muted);line-height:1.7;margin-bottom:2rem;font-size:1rem}
@@ -63,12 +58,18 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
 .svc-detail h4{font-weight:800;font-size:1rem;margin-bottom:.2rem}
 .svc-detail p{color:var(--muted);font-size:.85rem;line-height:1.5}
 
-/* CTA */
 .svc-cta{max-width:1000px;margin:0 auto;background:var(--surface-high);border-radius:24px;padding:4rem;text-align:center;border:1px solid var(--outline-dim);position:relative;overflow:hidden}
 .svc-cta .dots{position:absolute;inset:0;opacity:.06;background-image:radial-gradient(var(--primary) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
 .svc-cta h2{font-size:2.5rem;font-weight:800;letter-spacing:-0.04em;margin-bottom:.8rem;position:relative;z-index:1}
 .svc-cta p{color:var(--muted);margin-bottom:2rem;position:relative;z-index:1;max-width:500px;margin-left:auto;margin-right:auto}
 .svc-cta .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+.wa-float{position:fixed;bottom:1.5rem;left:1.5rem;z-index:190;display:flex;align-items:center;gap:.8rem}
+.wa-float-btn{width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s}
+.wa-float-btn:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,.5)}
+.wa-float-btn i{color:#fff;font-size:1.6rem}
+.wa-float-label{background:var(--surface);color:var(--ink);font-size:.75rem;font-weight:700;padding:.5rem 1rem;border-radius:10px;border:1px solid var(--outline-dim);white-space:nowrap;opacity:0;transform:translateX(-10px);transition:all .3s;pointer-events:none}
+.wa-float:hover .wa-float-label{opacity:1;transform:translateX(0)}
 
 @media(max-width:900px){.side-nav{width:100%}.svc-pair{grid-template-columns:1fr}.svc-split{grid-template-columns:1fr}.svc-block{padding:3rem 1.5rem}.svc-cta{padding:2.5rem;margin:0 1.5rem}}
 </style>
@@ -83,7 +84,7 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
     <a href="index.html" class="nav-item">Home</a>
     <a href="services.html" class="nav-item active">Services</a>
     <a href="about.html" class="nav-item">About</a>
-    <a href="https://wa.me/27784898868" class="nav-cta">Get Started</a>
+    <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20NextWaive%27s%20services.%20I%27d%20love%20to%20find%20out%20more!" class="nav-cta" target="_blank">Get Started</a>
     <div class="nav-contact"><a href="mailto:ansara.tanit@gmail.com">ansara.tanit@gmail.com</a><a href="tel:0784898868">078 489 8868</a></div>
 </nav>
 
@@ -94,7 +95,6 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
     <p class="reveal" style="transition-delay:.2s">High-performance digital tools built for South African SMBs. Every project gets a specialised quote tailored to your business.</p>
 </div>
 
-<!-- AI AUTOMATION -->
 <div class="svc-block">
     <div class="svc-feature reveal">
         <div class="section-label">Primary Service</div>
@@ -105,29 +105,27 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
             <li><i class="fas fa-bolt"></i> Natural Language Processing</li>
             <li><i class="fas fa-bolt"></i> 24/7 Lead Nurturing</li>
         </ul>
-        <a href="https://wa.me/27784898868" class="enquire">Get a quote for AI Automation</a>
+        <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20AI%20Automation%20from%20NextWaive.%20Can%20I%20get%20a%20quote%3F" class="enquire">Get a quote for AI Automation</a>
     </div>
 </div>
 
-<!-- WEB + BRANDING -->
 <div class="svc-block">
     <div class="svc-pair">
         <div class="svc-pair-card reveal">
             <div class="tag" style="background:rgba(144,147,255,.1);color:var(--secondary)">Core Tech</div>
             <h3>Website Design</h3>
             <p>Ultra-responsive, high-conversion interfaces built on modern stacks. We prioritise speed, SEO, and clean design that actually converts visitors into customers.</p>
-            <a href="https://wa.me/27784898868" class="cta-link">Get a quote</a>
+            <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20from%20NextWaive.%20Can%20I%20get%20a%20quote%3F" class="cta-link">Get a quote</a>
         </div>
         <div class="svc-pair-card reveal" style="transition-delay:.1s">
             <div class="tag" style="background:rgba(255,149,160,.1);color:var(--tertiary)">Identity</div>
             <h3>Branding</h3>
             <p>Visual systems that define your market position. Logo design, business cards, flyers, and everything you need to look professional from day one.</p>
-            <a href="https://wa.me/27784898868" class="cta-link">Get a quote</a>
+            <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20branding%20from%20NextWaive.%20Can%20I%20get%20a%20quote%3F" class="cta-link">Get a quote</a>
         </div>
     </div>
 </div>
 
-<!-- SOCIAL + ECOM -->
 <div class="svc-block">
     <div class="svc-split reveal">
         <div>
@@ -144,12 +142,11 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
                 <div class="icon-box" style="background:rgba(204,151,255,.1);color:var(--primary)"><i class="fas fa-shopping-cart"></i></div>
                 <div><h4>E-commerce Stores</h4><p>Full online stores with payment integration and product management.</p></div>
             </div>
-            <a href="https://wa.me/27784898868" style="font-size:.8rem;font-weight:700;color:var(--primary);margin-top:1rem;display:inline-block">Get a quote for growth services</a>
+            <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20social%20media%20and%20e-commerce%20from%20NextWaive.%20Can%20I%20get%20a%20quote%3F" style="font-size:.8rem;font-weight:700;color:var(--primary);margin-top:1rem;display:inline-block">Get a quote for growth services</a>
         </div>
     </div>
 </div>
 
-<!-- CTA -->
 <div class="svc-block">
     <div class="svc-cta reveal">
         <div class="dots"></div>
@@ -157,13 +154,18 @@ footer{padding:5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}.footer
         <h2>Every quote is tailored to you</h2>
         <p>Mix and match any of our services. Tell us what your business needs and we'll put together a specialised plan that fits your goals and budget.</p>
         <div class="btns">
-            <a href="https://wa.me/27784898868" class="btn-kinetic">Get Your Free Quote</a>
-            <a href="https://wa.me/27784898868" class="btn-ghost">Book a Strategy Call</a>
+            <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20NextWaive%27s%20services.%20I%27d%20love%20to%20find%20out%20more!" class="btn-kinetic" target="_blank">Get Your Free Quote</a>
+            <a href="index.html#book" class="btn-ghost">Book a Strategy Call</a>
         </div>
     </div>
 </div>
 
 <footer><div class="footer-inner"><a href="index.html" class="logo">Next<span>Waive</span></a><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a></div><p>&copy; 2026 NextWaive. Built at UCT.</p></div></footer>
+
+<a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20NextWaive%27s%20services.%20I%27d%20love%20to%20find%20out%20more!" class="wa-float" target="_blank" rel="noopener">
+    <div class="wa-float-btn"><i class="fab fa-whatsapp"></i></div>
+    <span class="wa-float-label">Chat with us</span>
+</a>
 
 <script>
 const trigger=document.getElementById('navTrigger'),overlay=document.getElementById('navOverlay'),sideNav=document.getElementById('sideNav');
