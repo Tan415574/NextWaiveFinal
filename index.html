@@ -137,7 +137,7 @@ footer{padding:7rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}
     <a href="about.html" class="nav-item">About</a>
     <a href="#book" class="nav-item">Book a Call</a>
     <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20NextWaive%27s%20services.%20I%27d%20love%20to%20find%20out%20more!" class="nav-cta" target="_blank">Get Started</a>
-    <div class="nav-contact"><a href="mailto:ansara.tanit@gmail.com">ansara.tanit@gmail.com</a><a href="tel:0784898868">078 489 8868</a></div>
+    <div class="nav-contact"><a href="/cdn-cgi/l/email-protection#5c3d322f3d2e3d72283d3235281c3b313d3530723f3331"><span class="__cf_email__" data-cfemail="91f0ffe2f0e3f0bfe5f0fff8e5d1f6fcf0f8fdbff2fefc">[email&#160;protected]</span></a><a href="tel:0784898868">078 489 8868</a></div>
 </nav>
 
 <!-- HERO -->
@@ -233,8 +233,8 @@ footer{padding:7rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}
         <div class="section-label">Book a Call</div>
         <div class="section-title reveal" style="margin-bottom:2.5rem">Pick a time that works for you</div>
         <!-- REPLACE YOUR_CALENDLY_LINK with your actual Calendly URL e.g. calendly.com/tanit-ansara/30min -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_LINK" style="min-width:320px;height:700px;border-radius:16px;overflow:hidden"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/ansara-tanit/30min" style="min-width:320px;height:700px;border-radius:16px;overflow:hidden"></div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </div>
 </section>
 
@@ -243,7 +243,7 @@ footer{padding:7rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}
     <div class="footer-inner">
         <div class="footer-headline reveal">Ready to catch the<br><em>NextWaive?</em></div>
         <div class="footer-contacts reveal" style="transition-delay:.1s">
-            <a href="mailto:ansara.tanit@gmail.com">ansara.tanit@gmail.com</a>
+            <a href="/cdn-cgi/l/email-protection#f2939c81938093dc86939c9b86b2959f939b9edc919d9f"><span class="__cf_email__" data-cfemail="a9c8c7dac8dbc887ddc8c7c0dde9cec4c8c0c587cac6c4">[email&#160;protected]</span></a>
             <a href="tel:0784898868">078 489 8868</a>
             <a href="https://wa.me/27784898868?text=Hi%2C%20I%27m%20interested%20in%20NextWaive%27s%20services.%20I%27d%20love%20to%20find%20out%20more!">WhatsApp</a>
         </div>
@@ -260,7 +260,7 @@ footer{padding:7rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.04)}
     <span class="wa-float-label">Chat with us</span>
 </a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Side nav
 const trigger=document.getElementById('navTrigger'),overlay=document.getElementById('navOverlay'),sideNav=document.getElementById('sideNav');
 function toggleNav(){const o=sideNav.classList.toggle('open');overlay.classList.toggle('open',o);trigger.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''}
@@ -283,8 +283,4 @@ canvas.addEventListener('touchend',()=>{mouse.x=null;mouse.y=null});
 class P{constructor(){this.x=Math.random()*canvas.offsetWidth;this.y=Math.random()*canvas.offsetHeight;this.vx=(Math.random()-.5)*.4;this.vy=(Math.random()-.5)*.4;this.r=Math.random()*1.5+.5;this.a=Math.random()*.5+.1}update(){this.x+=this.vx;this.y+=this.vy;const w=canvas.offsetWidth,h=canvas.offsetHeight;if(this.x<0)this.x=w;if(this.x>w)this.x=0;if(this.y<0)this.y=h;if(this.y>h)this.y=0;if(mouse.x!==null){const dx=this.x-mouse.x,dy=this.y-mouse.y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<MRAD){const f=(MRAD-dist)/MRAD*.02;this.vx+=dx*f;this.vy+=dy*f}}this.vx*=.99;this.vy*=.99}draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(204,151,255,${this.a})`;ctx.fill()}}
 function init(){particles=[];for(let i=0;i<COUNT;i++)particles.push(new P())}init();
 function animate(){const w=canvas.offsetWidth,h=canvas.offsetHeight;ctx.clearRect(0,0,w,h);for(let i=0;i<particles.length;i++)for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<CONN){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(144,147,255,${(1-dist/CONN)*.12})`;ctx.lineWidth=.5;ctx.stroke()}}
-if(mouse.x!==null){for(let p of particles){const dx=p.x-mouse.x,dy=p.y-mouse.y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<MRAD){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mouse.x,mouse.y);ctx.strokeStyle=`rgba(204,151,255,${(1-dist/MRAD)*.3})`;ctx.lineWidth=.8;ctx.stroke()}}ctx.beginPath();ctx.arc(mouse.x,mouse.y,4,0,Math.PI*2);ctx.fillStyle='rgba(204,151,255,0.6)';ctx.fill();const g=ctx.createRadialGradient(mouse.x,mouse.y,0,mouse.x,mouse.y,20);g.addColorStop(0,'rgba(204,151,255,0.15)');g.addColorStop(1,'rgba(204,151,255,0)');ctx.beginPath();ctx.arc(mouse.x,mouse.y,20,0,Math.PI*2);ctx.fillStyle=g;ctx.fill()}
-particles.forEach(p=>{p.update();p.draw()});requestAnimationFrame(animate)}animate();
-</script>
-</body>
-</html>
+if(mouse.x!==null){for(let p of particles){const dx=p.x-mouse.x,dy=p.y-mouse.y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<MRAD){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mouse.x,mouse.y);ctx.strokeStyle=`rgba(204,151,255,${(1-dist
